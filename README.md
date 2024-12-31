@@ -53,3 +53,39 @@ Aplikasi Streamlit ini bertujuan untuk memprediksi **status gizi balita** berdas
 
 ## Struktur File
 
+## Input dan Output
+
+- **Input**:
+  - **Usia (bulan)**: Usia balita dalam satuan bulan.
+  - **Berat badan (kg)**: Berat badan balita dalam satuan kilogram.
+  - **Tinggi badan (cm)**: Tinggi badan balita dalam satuan sentimeter.
+
+- **Output**:
+  - Status gizi balita:
+    - Gizi Buruk
+    - Gizi Kurang
+    - Normal
+    - Beresiko Gizi Lebih
+    - Gizi Lebih
+    - Obesitas
+
+## Contoh Tampilan
+
+1. **Input Data**:
+   - Pengguna memasukkan data usia, berat badan, dan tinggi badan balita.
+2. **Hasil Prediksi**:
+   - Sistem menampilkan hasil prediksi status gizi berdasarkan input data.
+
+## Catatan
+
+- Model ini dirancang untuk membantu tenaga kesehatan dalam memprediksi status gizi balita. Hasil prediksi hanya sebagai referensi awal dan tidak menggantikan diagnosis profesional.
+- Pastikan data yang dimasukkan akurat untuk hasil prediksi yang optimal.
+
+## Kontribusi
+
+Jika Anda memiliki saran atau ingin berkontribusi, silakan ajukan **pull request** atau buka **issue** di repository ini.
+
+## Lisensi
+
+Repository ini dilisensikan di bawah [MIT License](LICENSE).
+
