@@ -49,7 +49,7 @@ Aplikasi Streamlit ini bertujuan untuk memprediksi **status gizi balita** berdas
    - Aplikasi akan terbuka di browser pada URL `http://localhost:8501`.
 
 2. **Gunakan Aplikasi yang Telah Dideploy**:
-   - Anda juga bisa mengakses aplikasi ini secara online melalui Streamlit Sharing. Klik Klik [di sini](https://share.streamlit.io/username/repository-name/main/app.py) untuk mencoba.
+   - Anda juga bisa mengakses aplikasi ini secara online melalui Streamlit Sharing. Klik [di sini](https://prediksi-status-gizi.streamlit.app/) untuk mencoba.
 
 ## Struktur File
 
