@@ -1,22 +1,36 @@
 # Prediksi Status Gizi Balita dengan Streamlit
 
-Aplikasi Streamlit ini bertujuan untuk memprediksi **status gizi balita** berdasarkan data **usia**, **berat badan**, dan **tinggi badan**. Prediksi dilakukan menggunakan model **Logistic Regression** yang telah dioptimasi, dan data input akan melalui proses normalisasi sebelum diproses oleh model.
+Aplikasi Streamlit ini bertujuan untuk memprediksi **Status Gizi Balita** berdasarkan data **Jenis Kelamin**, **Usia**, **Berat Badan**, **Tinggi Badan**, **Lingkar Lengan Atas**, dan **Lingkar Kepala**. Prediksi dilakukan menggunakan model **Algoritma Logistic Regression** yang telah dioptimasi, dan data input akan melalui proses normalisasi sebelum diproses oleh model.
 
 ## Fitur Aplikasi
 
 1. **Input Data Manual**: 
    - Pengguna dapat memasukkan data balita berupa:
+     -**Jenis Kelamin (Laki-laki/Perempuan)**
      - **Usia (bulan)**
-     - **Berat badan (kg)**
-     - **Tinggi badan (cm)**
-   - Setelah data dimasukkan, aplikasi akan memberikan prediksi status gizi balita.
+     - **Berat Badan (kg)**
+     - **Tinggi Badan (cm)**
+     - **Lingkar Lengan Atas (cm)**
+     - **Lingkar Kepala (cm)**
+   - Setelah data dimasukkan, aplikasi akan memberikan hasil prediksi status gizi balita.
 
 2. **Prediksi Status Gizi**:
-   - Model akan mengklasifikasikan status gizi balita ke dalam salah satu kategori berikut:
+   Model akan mengklasifikasikan status gizi balita ke dalam 3 kategori, yaitu sebagai berikut:
+   - BB/U
+     - Berat Badan Sangat Kurang
+     - Berat Badan Kurang
+     - Berat Badan Normal
+     - Risiko Lebih
+   - TB/U
+     - Sangat Pendek
+     - Pendek
+     - Normal
+     - Tinggi
+   - BB/TB
      - Gizi Buruk
      - Gizi Kurang
-     - Normal
-     - Beresiko Gizi Lebih
+     - Gizi Normal/Baik
+     - Berisiko Gizi Lebih
      - Gizi Lebih
      - Obesitas
 
@@ -56,23 +70,37 @@ Aplikasi Streamlit ini bertujuan untuk memprediksi **status gizi balita** berdas
 ## Input dan Output
 
 - **Input**:
+  - **Jenis Kelamin (L/P)**: Jenis kelamin balita Laki-laki atau Perempuan.
   - **Usia (bulan)**: Usia balita dalam satuan bulan.
   - **Berat badan (kg)**: Berat badan balita dalam satuan kilogram.
   - **Tinggi badan (cm)**: Tinggi badan balita dalam satuan sentimeter.
+  - **Lingkar Lengan Atas (cm)**: Lingkar lengan atas balita dalam satuan sentimeter.
+  - **Lingkar Kepala (cm)**: Lingkar kepala balita dalam satuan sentimeter.
 
 - **Output**:
-  - Status gizi balita:
-    - Gizi Buruk
-    - Gizi Kurang
-    - Normal
-    - Beresiko Gizi Lebih
-    - Gizi Lebih
-    - Obesitas
+  Hasil prediksi terbagi menjadi 3 kategori Status gizi, yaitu:
+   - BB/U
+     - Berat Badan Sangat Kurang
+     - Berat Badan Kurang
+     - Berat Badan Normal
+     - Risiko Lebih
+   - TB/U
+     - Sangat Pendek
+     - Pendek
+     - Normal
+     - Tinggi
+   - BB/TB
+     - Gizi Buruk
+     - Gizi Kurang
+     - Gizi Normal/Baik
+     - Berisiko Gizi Lebih
+     - Gizi Lebih
+     - Obesitas
 
 ## Contoh Tampilan
 
 1. **Input Data**:
-   - Pengguna memasukkan data usia, berat badan, dan tinggi badan balita.
+   - Pengguna memasukkan data berupa jenis kelamin, usia, berat badan, dan tinggi badan, lingkar lengan atas, dan lingkar kepala balita.
 2. **Hasil Prediksi**:
    - Sistem menampilkan hasil prediksi status gizi berdasarkan input data.
 
